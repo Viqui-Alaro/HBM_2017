@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    public final static String LOG = "CursoAndroid";
+    public final static String LOG = "HBM_Android";
 
     public final static String USUARIO_VALIDO = "root";
     public final static String PASSWORD_VALIDO = "123456";

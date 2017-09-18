@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lyUno">
+
+    <Button
+        android:id="@+id/btnConfiguracion"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="330dp"
+        android:text="Button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:id="@+id/lyDos" >
+
+        <ImageView
+            android:id="@+id/imgPersona"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/persona1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/lyTres"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblNombreP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Irene Torrez C." />
+
+            <TextView
+                android:id="@+id/lblCargo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EJECUTIVA DE VENTAS" />
+
+            <TextView
+                android:id="@+id/lblDivision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Div. Consumo y Pharma" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lyCuatro"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

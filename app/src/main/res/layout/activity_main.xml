@@ -37,6 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:layout_weight="0.02"
+        android:hint="@string/usuario"
         android:layout_marginLeft="20dp"
         android:textColor="@color/colorText"
         android:text="@string/usuario" />
@@ -56,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:layout_marginLeft="20dp"
+        android:hint="@string/password"
         android:layout_weight="0.04"
         android:textColor="@color/colorText"
         android:text="@string/password" />
