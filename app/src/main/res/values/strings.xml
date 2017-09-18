@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HBM</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="resultado">Resultado</string>
+    <string name="nombreEmpresa">HANSA BUSINESS MOBILE</string>
+
+    <string name="login_ok">Bienvenido: %s</string>
+    <string name="login_error">Usuario o contraseña incorrecta</string>
+
+
+</resources>
