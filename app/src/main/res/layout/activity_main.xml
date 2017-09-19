@@ -8,78 +8,100 @@
     android:layout_height="match_parent"
     tools:context="hansa.com.bo.hbm.MainActivity"
     android:orientation="vertical"
-    android:background="#2E64FE"
-    android:id="@+id/lyPadre"
-    android:padding="24dp">
+    android:background="#007FFF"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:id="@+id/lyPadre">
 
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|top"
-
-        android:layout_weight="0.74"
-        app:srcCompat="@drawable/logo" />
-
-    <TextView
-        android:id="@+id/lblEmpresa"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/lyLogo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="2dp"
-        android:layout_marginLeft="70dp"
-        android:textColor="@color/colorText"
-        android:text="@string/nombreEmpresa" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="15dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/lblUsuario"
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/lblEmpresa"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="19dp"
+            android:text="@string/nombreEmpresa"
+            android:textColor="@color/colorText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyContacto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:layout_weight="0.02"
-        android:hint="@string/usuario"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/colorText"
-        android:text="@string/usuario" />
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/txtUsuario"
-        android:layout_width="132dp"
+
+        <ImageView
+            android:id="@+id/imgUsuario"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/usuarios"/>
+        <EditText
+            android:id="@+id/txtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:hint="@string/usuario"
+            android:textColorHint="@color/colorText"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyContraseña"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:layout_marginLeft="15dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/lblPassword"
-        android:layout_width="101dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:layout_marginLeft="20dp"
-        android:hint="@string/password"
-        android:layout_weight="0.04"
-        android:textColor="@color/colorText"
-        android:text="@string/password" />
 
-    <EditText
-        android:id="@+id/txtPassword"
-        android:layout_width="134dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:layout_marginLeft="20dp"
-        android:layout_weight="0.04"
+        <ImageView
+            android:id="@+id/imgPassword"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/llave"/>
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:hint="@string/password"
+            android:textColorHint="@color/colorText"
+            android:layout_weight="0.01"
+            android:inputType="textWebPassword" />
+    </LinearLayout>
 
-        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/btnIngresar"
-        android:layout_width="250dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_weight="0.03"
-        android:layout_marginTop="1dp"
-        android:layout_marginLeft="10dp"
         android:background="#25B03A"
         android:textColor="@color/colorText"
         android:text="@string/ingresar" />
@@ -89,9 +111,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:layout_weight="0.02"
-        android:text="@string/resultado" />
-
+        />
+    <TextView
+        android:id="@+id/lblVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="15dp"
+        android:textColor="@color/colorText"
+        android:layout_marginTop="10dp"
+        android:text="Version 1.0.0"
+        />
 
 </LinearLayout>

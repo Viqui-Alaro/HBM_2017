@@ -1,6 +1,7 @@
 package hansa.com.bo.hbm;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.WindowDecorActionBar;
@@ -14,16 +15,15 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Context context;
+
     public final static String LOG = "HBM_Android";
 
     public final static String USUARIO_VALIDO = "root";
     public final static String PASSWORD_VALIDO = "123456";
 
-    private LinearLayout lyPadre;
-    private TextView lblEmpresa;
-    private TextView lblUsuario;
+
     private TextView txtUsuario;
-    private TextView lblPassword;
     private TextView txtPassword;
     private Button btnIngresar;
     private TextView lblResultado;
@@ -32,18 +32,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d(LOG,"onCreate");
+        context = this;
 
-        lyPadre = (LinearLayout) findViewById(R.id.lyPadre);
-        lblEmpresa = (TextView) findViewById(R.id.lblEmpresa);
-        lblUsuario = (TextView) findViewById(R.id.lblUsuario);
+        Intent intent =getIntent();
         txtUsuario = (TextView) findViewById(R.id.txtUsuario);
-        lblPassword = (TextView) findViewById(R.id.lblPassword);
-
-
         txtPassword = (TextView) findViewById(R.id.txtPassword);
-
-
         btnIngresar = (Button) findViewById(R.id.btnIngresar);
         lblResultado = (TextView) findViewById(R.id.lblResultado);
 
@@ -55,7 +48,15 @@ public class MainActivity extends AppCompatActivity {
                 String password = txtPassword.getText().toString();
 
                 if (usuario.equals(USUARIO_VALIDO) && password.equals(PASSWORD_VALIDO)) {
-                    lblResultado.setText(getString(R.string.login_ok,usuario));
+
+                    Intent menuIntent = new Intent(context,MenuActivity.class);
+                    menuIntent.putExtra("titulo","Menu");
+                    startActivity(menuIntent);
+                    txtUsuario.setText("");
+                    txtPassword.setText("");
+                    txtUsuario.requestFocus();
+
+
                 }
                 else{
                     lblResultado.setText(getString((R.string.login_error)));
@@ -64,10 +65,8 @@ public class MainActivity extends AppCompatActivity {
                     txtUsuario.requestFocus();
                 }
 
-
             }
         });
-
 
     }
 
