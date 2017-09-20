@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,14 +15,14 @@
         android:gravity="right">
 
         <Button
-            android:id="@+id/btnHerramienta"
+            android:id="@+id/btnHerramientaa"
             android:layout_width="40dp"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/lyCabMenu"
+        android:id="@+id/lyInfoPer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -45,9 +44,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="12dp"
                 android:textColor="#000000"
+                android:textSize="12dp"
                 tools:text="Irene Torrez C." />
+
 
             <TextView
                 android:id="@+id/txtCargo"
@@ -69,18 +69,18 @@
 
     </LinearLayout>
 
-   <LinearLayout
-       android:id="@+id/lyAyuda"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:gravity="right">
-       <Button
-           android:id="@+id/btnAyuda"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"/>
-   </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyAyuda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right">
+        <Button
+            android:id="@+id/btnAyuda"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content" />
 
-
+    </LinearLayout>
 
 
     <FrameLayout
@@ -99,6 +99,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:padding="5dp"
                 android:layout_weight="1">
 
                 <LinearLayout
@@ -107,7 +108,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="5dp">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -127,7 +128,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="5dp">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -145,37 +146,160 @@
                     android:id="@+id/lyProductos"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:layout_weight="1"
-                    android:padding="14dp">
-                    
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
-                        android:src="@drawable/usuario"/>
+                        android:src="@drawable/usuario" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Productos"/>
+                        android:text="Productos" />
 
                 </LinearLayout>
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:padding="5dp"
                 android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/lyPedidos"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:src="@drawable/usuario" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Pedidos" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                android:id="@+id/lyFacturacion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                    android:padding="5dp"
+                android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/usuario"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Facturación"/>
+
+
+
+            </LinearLayout>
+
+             <LinearLayout
+              android:id="@+id/lyCobranzas"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:padding="5dp"
+                 android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/usuario"/>
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:text="Cobranzas"/>
+
+             </LinearLayout>
 
 
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:padding="5dp"
                 android:layout_weight="1">
+
+             <LinearLayout
+              android:id="@+id/lyEntregas"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:padding="5dp"
+                 android:orientation="vertical"
+                 >
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="70dp"
+                 android:src="@drawable/usuario"/>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="Entregas"/>
+
+             </LinearLayout>
+
+              <LinearLayout
+                android:id="@+id/lyDashboard"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:padding="5dp"
+                  android:layout_weight="2">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="70dp"
+                      android:src="@drawable/usuario"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="Dashboard"/>
+              </LinearLayout>
+
+
+
 
             </TableRow>
         </TableLayout>
     </FrameLayout>
+    <LinearLayout
+        android:id="@+id/lyMenuSig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnMenuSig"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
 
 

@@ -23,6 +23,16 @@
         <activity
             android:name=".InicioActivity"
             android:label="@string/title_activity_inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ClientesActivity" />
+        <activity android:name=".ProductosActivity" />
+        <activity android:name=".PedidosActivity" />
+        <activity android:name=".FacturacionActivity" />
+        <activity android:name=".CobranzasActivity" />
+        <activity android:name=".EntregasActivity" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/title_activity_dashboard"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
