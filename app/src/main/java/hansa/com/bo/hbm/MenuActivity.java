@@ -130,11 +130,15 @@ public class MenuActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent dashboardIntent =  new Intent(context,DashboardActivity.class);
+                Intent dashboardIntent =  new Intent(context,Menu2Activity.class);
                 dashboardIntent.putExtra("titulo","Dashboard");
                 startActivity(dashboardIntent);
             }
         });
+
+
+
+
 
 
 
